@@ -1,0 +1,58 @@
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT>
+		<type>array</type>
+		<el>
+			<switchableControllerActions>
+    			<TCEforms>
+        			<label>LLL:EXT:wf_elearning/Resources/Private/Language/locallang_db.xml:tx_wfelearning_modul_learnfront.flexform.type_label</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+                  			<numIndex index="1" type="array">
+                    			<numIndex index="0">LLL:EXT:wf_elearning/Resources/Private/Language/locallang_db.xml:tx_wfelearning_modul_learnfront.flexform.type_1</numIndex>
+                   				<numIndex index="1">Cat->list</numIndex>
+                 			</numIndex>
+                  			<numIndex index="2" type="array">
+                    			<numIndex index="0">LLL:EXT:wf_elearning/Resources/Private/Language/locallang_db.xml:tx_wfelearning_modul_learnfront.flexform.type_2</numIndex>
+                   				<numIndex index="1">Question->show</numIndex>
+                 			</numIndex>
+                 			<numIndex index="3" type="array">
+                    			<numIndex index="0">LLL:EXT:wf_elearning/Resources/Private/Language/locallang_db.xml:tx_wfelearning_modul_learnfront.flexform.type_3</numIndex>
+                   				<numIndex index="1">Table->list</numIndex>
+                 			</numIndex>
+                		</items>
+                		<maxitems>1</maxitems>
+               			<size>1</size>
+					</config>
+    			</TCEforms>
+			</switchableControllerActions>
+			<settings.flexform.cat>
+				<TCEforms>
+					<label>LLL:EXT:wf_elearning/Resources/Private/Language/locallang_db.xml:tx_wfelearning_modul_learnfront.flexform.cat_label</label>
+					<config>
+						<type>select</type>
+						<foreign_table>tx_wfelearning_domain_model_cat</foreign_table>
+						<foreign_table_where> AND tx_wfelearning_domain_model_cat.pid = (SELECT pages FROM tt_content WHERE uid=###THIS_UID###)</foreign_table_where>
+						<renderMode>tree</renderMode>
+						<subType>db</subType>
+						<treeConfig>
+							<parentField>parent_cat</parentField>
+							<appearance>
+								<expandAll>1</expandAll>
+								<showHeader>0</showHeader>
+								<maxLevels>99</maxLevels>
+							</appearance>
+						</treeConfig>
+						<size>10</size>
+						<autoSizeMax>20</autoSizeMax>
+						<minitems>0</minitems>
+						<maxitems>1</maxitems>
+					</config>
+				</TCEforms>
+			</settings.flexform.cat>
+		</el>
+	</ROOT>
+</T3DataStructure>

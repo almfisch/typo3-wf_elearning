@@ -1,0 +1,14 @@
+plugin.tx_wfelearning {
+	view {
+		# cat=plugin.tx_wfelearning/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:wf_elearning/Resources/Private/Templates/
+		# cat=plugin.tx_wfelearning/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:wf_elearning/Resources/Private/Partials/
+		# cat=plugin.tx_wfelearning/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:wf_elearning/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_wfelearning//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-11T09:41:57Z" product-name="wf_elearning">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="cat_id.description">
+				<source>catId</source>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="img_desc.description">
+				<source>imgDesc</source>
+			</trans-unit>
+			<trans-unit id="video_desc.description">
+				<source>videoDesc</source>
+			</trans-unit>
+			<trans-unit id="original_norm.description">
+				<source>originalNorm</source>
+			</trans-unit>
+			<trans-unit id="points.description">
+				<source>points</source>
+			</trans-unit>
+			<trans-unit id="q1.description">
+				<source>q1</source>
+			</trans-unit>
+			<trans-unit id="a1.description">
+				<source>a1</source>
+			</trans-unit>
+			<trans-unit id="c1.description">
+				<source>c1</source>
+			</trans-unit>
+			<trans-unit id="c2.description">
+				<source>c2</source>
+			</trans-unit>
+			<trans-unit id="c3.description">
+				<source>c3</source>
+			</trans-unit>
+			<trans-unit id="img_drag.description">
+				<source>imgDrag</source>
+			</trans-unit>
+			<trans-unit id="img_drop.description">
+				<source>imgDrop</source>
+			</trans-unit>
+			<trans-unit id="c4.description">
+				<source>c4</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

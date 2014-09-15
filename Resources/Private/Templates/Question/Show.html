@@ -1,0 +1,149 @@
+{namespace h=Tx_WfElearning_ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<f:form method="post" action="show" class="tx_wfelearning_form" name="formAnswers">
+	<div class="info_wrapper">
+		<f:if condition="{settings.showAllPoints} == 1">
+			<div class="info_item">
+				{settings.textAllPoints} <b>{allPoints}</b><br />
+				{settings.textAllQuestions} <b>{allQuestions}</b>
+			</div>
+		</f:if>
+		<f:if condition="{formAnswers}">
+			<div class="info_item">
+				{settings.textActPoints} <b>{actPoints}</b><br />
+				{settings.textActQuestions} <b>{actQuestions}</b>
+			</div>
+		</f:if>
+	</div>
+	
+	<f:for each="{questions}" as="question" iteration="num">
+
+		<f:if condition="{question.type} == 1">
+			<div class="question_wrapper question_type_1 {question.okey}">
+				<div class="question_item question_head">
+					<div class="q_num"><span class="badge">{num.cycle}</span></div>
+					<div class="q_title">{question.title}</div>
+					<div class="q_type"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.type')}:</span> {f:translate(key:'tx_wfelearning_domain_model_question.type_{question.type}')}</div>
+					<div class="q_points"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.points')}:</span> {question.points}</div>
+					<f:if condition="{question.imgDesc}">
+						<div class="q_img_desc"><a class="lightbox" href="{question.imgDesc}" title="{question.title}" rel="lightbox"><f:image src="{question.imgDesc}" alt="{question.title}" title="{question.title}" maxWidth="{settings.imgDesc.width}" maxHeight="{settings.imgDesc.height}" /></a></div>
+					</f:if>
+					<f:if condition="{question.videoDesc}">
+						<div class="q_video_desc"><f:format.raw>{question.videoDesc}</f:format.raw></div>
+					</f:if>
+					<f:if condition="{question.originalNorm}"><f:if condition="{formAnswers}">
+						<div class="q_original_norm"><f:format.html>{question.originalNorm}</f:format.html></div>
+					</f:if></f:if>
+					<div class="q_question"><f:format.html>{question.q1}</f:format.html></div>
+				</div>
+				<div class="question_item question_answer">
+					<span class="q_label">{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.answer')}:</span>
+					<f:for each="<h:array>{question.a1}</h:array>" as="answer" iteration="anum">
+						<label class="checkbox"><f:form.checkbox property="{num.cycle}.type_{question.type}.{anum.cycle}" value="{answer}" checked="<h:dynamicArray obj=\"{formAnswers}\" num=\"{num.cycle}\" type=\"{question.type}\"  anum=\"{anum.cycle}\"></h:dynamicArray> == {answer}" />{answer}</label>
+					</f:for>
+				</div>
+			</div>
+		</f:if>
+
+		<f:if condition="{question.type} == 2">
+			<div class="question_wrapper question_type_2 {question.okey}">
+				<div class="question_item question_head">
+					<div class="q_num"><span class="badge">{num.cycle}</span></div>
+					<div class="q_title">{question.title}</div>
+					<div class="q_type"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.type')}:</span> {f:translate(key:'tx_wfelearning_domain_model_question.type_{question.type}')}</div>
+					<div class="q_points"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.points')}:</span> {question.points}</div>
+					<f:if condition="{question.imgDesc}">
+						<div class="q_img_desc"><a class="lightbox" href="{question.imgDesc}" title="{question.title}" rel="lightbox"><f:image src="{question.imgDesc}" alt="{question.title}" title="{question.title}" maxWidth="{settings.imgDesc.width}" maxHeight="{settings.imgDesc.height}" /></a></div>
+					</f:if>
+					<f:if condition="{question.videoDesc}">
+						<div class="q_video_desc"><f:format.raw>{question.videoDesc}</f:format.raw></div>
+					</f:if>
+					<f:if condition="{question.originalNorm}"><f:if condition="{formAnswers}">
+						<div class="q_original_norm"><f:format.html>{question.originalNorm}</f:format.html></div>
+					</f:if></f:if>
+					<div class="q_question"><f:format.html>{question.q1}</f:format.html></div>
+				</div>
+				<div class="question_item question_answer"><span class="q_label">{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.answer')}:</span><f:form.textfield property="{num.cycle}.type_{question.type}" value="<h:dynamicArray obj=\"{formAnswers}\" num=\"{num.cycle}\" type=\"{question.type}\"  anum=\"{anum.cycle}\"></h:dynamicArray>" /></div>
+			</div>
+		</f:if>
+
+		<f:if condition="{question.type} == 3">
+			<div class="question_wrapper question_type_3 {question.okey}">
+				<div class="question_item question_head">
+					<div class="q_num"><span class="badge">{num.cycle}</span></div>
+					<div class="q_title">{question.title}</div>
+					<div class="q_type"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.type')}:</span> {f:translate(key:'tx_wfelearning_domain_model_question.type_{question.type}')}</div>
+					<div class="q_points"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.points')}:</span> {question.points}</div>
+					<f:if condition="{question.imgDesc}">
+						<div class="q_img_desc"><a class="lightbox" href="{question.imgDesc}" title="{question.title}" rel="lightbox"><f:image src="{question.imgDesc}" alt="{question.title}" title="{question.title}" maxWidth="{settings.imgDesc.width}" maxHeight="{settings.imgDesc.height}" /></a></div>
+					</f:if>
+					<f:if condition="{question.videoDesc}">
+						<div class="q_video_desc"><f:format.raw>{question.videoDesc}</f:format.raw></div>
+					</f:if>
+					<f:if condition="{question.originalNorm}"><f:if condition="{formAnswers}">
+						<div class="q_original_norm"><f:format.html>{question.originalNorm}</f:format.html></div>
+					</f:if></f:if>
+				</div>
+				<div class="question_item question_answer"><f:format.html><h:replace type="{question.type}" num="{num.cycle}" obj="{formAnswers}">{question.q1}</h:replace></f:format.html></div>
+			</div>
+		</f:if>
+
+		<f:if condition="{question.type} == 4">
+			<div class="question_wrapper question_type_4 {question.okey}">
+				<div class="question_item question_head">
+					<div class="q_num"><span class="badge">{num.cycle}</span></div>
+					<div class="q_title">{question.title}</div>
+					<div class="q_type"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.type')}:</span> {f:translate(key:'tx_wfelearning_domain_model_question.type_{question.type}')}</div>
+					<div class="q_points"><span class="q_label">{f:translate(key:'tx_wfelearning_domain_model_question.points')}:</span> {question.points}</div>
+					<f:if condition="{question.imgDesc}">
+						<div class="q_img_desc"><a class="lightbox" href="{question.imgDesc}" title="{question.title}" rel="lightbox"><f:image src="{question.imgDesc}" alt="{question.title}" title="{question.title}" maxWidth="{settings.imgDesc.width}" maxHeight="{settings.imgDesc.height}" /></a></div>
+					</f:if>
+					<f:if condition="{question.videoDesc}">
+						<div class="q_video_desc"><f:format.raw>{question.videoDesc}</f:format.raw></div>
+					</f:if>
+					<f:if condition="{question.originalNorm}"><f:if condition="{formAnswers}">
+						<div class="q_original_norm"><f:format.html>{question.originalNorm}</f:format.html></div>
+					</f:if></f:if>
+					<div class="q_question"><f:format.html>{question.q1}</f:format.html></div>
+				</div>
+				<div class="question_item question_answer clearfix">
+					<div class="drdr_left">
+						<f:for each="<h:array mode=\"2\">{question.imgDrop}</h:array>" as="image" iteration="anum">
+							<div class="img_drop">
+								<f:image src="{image}" alt="{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.drop')}" title="{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.drop')}" maxWidth="{settings.dragdrop.width}" maxHeight="{settings.dragdrop.height}" />
+								<f:form.hidden property="{num.cycle}.type_{question.type}.{anum.cycle}" value="<h:dynamicArray obj=\"{formAnswers}\" num=\"{num.cycle}\" type=\"{question.type}\"  anum=\"{anum.cycle}\"></h:dynamicArray>" />
+							</div>
+						</f:for>
+					</div>
+					<div class="drdr_right">
+						 <div class="img_drag"><f:image src="{question.imgDrag}" alt="{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.drag')}" title="{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.drag')}" maxWidth="{settings.dragdrop.width}" maxHeight="{settings.dragdrop.height}" /></div>
+					</div>
+				</div>
+			</div>
+		</f:if>
+
+	</f:for>
+
+	<a href="#okModal" role="button" class="btn btn-success" data-toggle="modal"><i class="icon-check icon-white"></i> {f:translate(key:'tx_wfelearning_modul_learnfront.template.question.submit')}</a>
+	<div id="okModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+			<h3 id="myModalLabel">{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.submit_modal_header')}</h3>
+		</div>
+		<div class="modal-body">
+			<p>{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.submit_modal_content')}</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">{f:translate(key:'tx_wfelearning_modul_learnfront.template.question.submit_modal_close')}</button>
+			<button type="submit" class="btn btn-success"><i class="icon-check icon-white"></i> {f:translate(key:'tx_wfelearning_modul_learnfront.template.question.submit')}</button>
+		</div>
+	</div>
+
+</f:form>
+</f:section>

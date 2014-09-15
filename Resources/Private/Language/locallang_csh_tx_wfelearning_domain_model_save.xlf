@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-10T13:13:25Z" product-name="wf_elearning">
+		<header/>
+		<body>
+
+			<trans-unit id="user_id.description">
+				<source>User: the user</source>
+			</trans-unit>
+			<trans-unit id="cat_id.description">
+				<source>Category: the last visited category</source>
+			</trans-unit>
+			<trans-unit id="question_id.description">
+				<source>Question: the last answered question</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

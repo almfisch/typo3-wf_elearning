@@ -1,0 +1,7 @@
+<f:form.errors for="{formName}">
+    <f:if condition="{0:error.propertyName} == {0:'{fieldName}'}">
+        <f:for each="{error.errors}" as="errorItem">
+            <strong style="color: red;"><f:translate key="tx_wfsidid_errors.{errorItem.code}" /></strong>
+        </f:for>
+    </f:if>
+</f:form.errors>

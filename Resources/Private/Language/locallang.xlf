@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-10T12:10:12Z" product-name="wf_elearning">
+		<header/>
+		<body>
+		
+			<trans-unit id="tx_wfelearning_ext_title">
+				<source>TYPO3 eLearning Tool</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_ext_description">
+				<source>Create your eLearning App</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfelearning_domain_model_cat">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_cat.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_cat.parent_cat">
+				<source>Parent Category</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_cat.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_cat.fe_group">
+				<source>Usergroup</source>
+			</trans-unit>
+
+			<trans-unit id="tx_wfelearning_domain_model_save">
+				<source>Save Level</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_save.user_id">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_save.cat_id">
+				<source>Act Category</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_save.question_id">
+				<source>Act Question</source>
+			</trans-unit>
+
+			<trans-unit id="tx_wfelearning_domain_model_question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.cat_id">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.type_1">
+				<source>Multiple Choice</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.type_2">
+				<source>Free Text</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.type_3">
+				<source>Cloze Text</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.type_4">
+				<source>Drag &amp; Drop</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.img_desc">
+				<source>Image (for description)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.video_desc">
+				<source>Video (for description)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.original_norm">
+				<source>Original Norm Passage</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.points">
+				<source>Points</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.q1">
+				<source>Question (with placeholders #1#, #2#, #3# ... for cloze text)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.a1">
+				<source>Answers (one answer each line)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.c1">
+				<source>Correct Answers (comma separated list)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.c2">
+				<source>Correct Answers (comma separated list)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.c3">
+				<source>Correct Answers (one line for each placeholder, comma separated list)</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.img_drag">
+				<source>Image to drag</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.img_drop">
+				<source>Images for dropping</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_domain_model_question.c4">
+				<source>Correct Drop Images (comma separated list)</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfelearning_modul_learnfront">
+				<source>Typo3 eLearning Tool</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfelearning_modul_learnfront.flexform.type_label">
+				<source>Frontend Plugin Type</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.flexform.type_1">
+				<source>eLearning Navigation</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.flexform.type_2">
+				<source>elearning Questions</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.flexform.type_3">
+				<source>elearning Results</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.flexform.cat_label">
+				<source>Navigation Root / Question Category / Result Category</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.answer">
+				<source>Answer</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.drag">
+				<source>Drag Me</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.drop">
+				<source>Drop Here</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.submit">
+				<source>Ok</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.submit_modal_header">
+				<source>Please Confirm !</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.submit_modal_content">
+				<source>Are you sure, that all your answers are ok?</source>
+			</trans-unit>
+			<trans-unit id="tx_wfelearning_modul_learnfront.template.question.submit_modal_close">
+				<source>No</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-10-10T13:13:25Z" product-name="wf_elearning">
+		<header/>
+		<body>
+
+			<trans-unit id="title.description">
+				<source>Title: the name of the category</source>
+			</trans-unit>
+			<trans-unit id="parent_cat.description">
+				<source>Parent Category: parent category, if no root level</source>
+			</trans-unit>
+			<trans-unit id="description.description">
+				<source>Description: a short description, if you like</source>
+			</trans-unit>
+			<trans-unit id="fe_group.description">
+				<source>User Group: limit to a specific usergroup</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

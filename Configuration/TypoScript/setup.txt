@@ -1,0 +1,26 @@
+plugin.tx_wfelearning {
+	view {
+		templateRootPath = {$plugin.tx_wfelearning.view.templateRootPath}
+		partialRootPath = {$plugin.tx_wfelearning.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_wfelearning.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_wfelearning.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+	settings {
+		# question.template = fileadmin/template/mytemplate.html
+		imgDesc.width = 300
+		imgDesc.height = 120
+		dragdrop.width = 100
+		dragdrop.height = 100
+		showAllPoints = 1
+		textAllPoints = Max Points:
+		textActPoints = Your Points:
+		textAllQuestions = Number Of Questions:
+		textActQuestions = Your Correct Answers:
+	}
+}
